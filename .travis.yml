@@ -15,10 +15,10 @@ after_success:
   - docker build -t ajuljulian/multi-server ./server
   - docker build -t ajuljulian/multi-worker ./worker
 
-  # Login to Docker CLI
+  # Login to docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
-  # Take those images and push them to Docker hub.
+  # Take those images and push them to docker hub.
   - docker push ajuljulian/multi-client
   - docker push ajuljulian/multi-nginx
   - docker push ajuljulian/multi-server
