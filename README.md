@@ -297,6 +297,7 @@ Apply this security group to EB, Redis, and Postgres.
 
 ![Elasticache Redis](images/elasticache_redis1.png)
 
+<<<<<<< HEAD
 Once you have set up Postgres and Redis, you need to go back to Elastic Beanstalk and setup environment variables for them.
 
 ![Elastic Beanstalk Environment properties](images/eb_environment_properties.png)
@@ -312,3 +313,5 @@ In order for Travis to deploy to AWS Elastic Beanstalk, you need to:
 2. Add `AWS_ACCESS_KEY` and `AWS_SECRET_KEY` environment variables to Travis matching the IAM user's credentials
 
 3. Add deploy section at the bottom of `.travis.yml`
+=======
+>>>>>>> cb1c52c6713ee29e2cbb16599e573cc974c10cce
